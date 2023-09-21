@@ -9,6 +9,22 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get('/civic.ejs', (req, res) => {
+  res.render('civic');
+});
+
+app.get('/index.ejs', (req, res) => {
+  res.render('index');
+});
+
+app.get('/pajero.ejs', (req, res) => {
+  res.render('pajero');
+});
+
+app.get('/porsche.ejs', (req, res) => {
+  res.render('porsche');
+});
+
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
 });
